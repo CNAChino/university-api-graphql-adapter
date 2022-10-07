@@ -1,0 +1,8 @@
+type Query {
+    findUniversityByName(name: String!): [University!]! @adapter("searchUniversityApi")
+}
+
+type  University {
+    country: String!
+    name: String!
+}

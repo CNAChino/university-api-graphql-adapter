@@ -1,0 +1,15 @@
+{
+  "namespace" : "UNIVERSITIES_API",
+  "appId" : "universities.api.adapter",
+  "type": "rest",
+  "environments": {
+    "DEV": {
+      "endpoint": "http://universities.hipolabs.com",
+      "timeout": 5000
+    },
+    "QA": {
+      "endpoint": "http://universities.hipolabs.com",
+      "timeout": 5000
+    }
+  }
+}
