@@ -1,6 +1,6 @@
 Service service as searchUniversityApi method GET {
   Url -> @Config("endpoint")
-  Path -> ${"search"}
+  Path -> ${"/search"}
   Timeout -> ${@Config("timeout")}
   @Query name -> ${requestContext.arguments.name}
 }

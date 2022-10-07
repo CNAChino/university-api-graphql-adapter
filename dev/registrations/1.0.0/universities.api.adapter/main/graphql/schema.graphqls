@@ -1,5 +1,7 @@
+directive @adapter(service:String!) on FIELD_DEFINITION
+
 type Query {
-    findUniversityByName(name: String!): [University!]! @adapter("searchUniversityApi")
+    findUniversityByName(name: String!): [University!]! @adapter(service: "searchUniversityApi")
 }
 
 type  University {
