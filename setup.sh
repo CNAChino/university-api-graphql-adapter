@@ -16,15 +16,9 @@ showUsage() {
 }
 
 # Create Topic Function
-createTopic() {
-  echo "Creating bucket: topics"
-  aws --endpoint-url=http://localhost:4572 s3 mb s3://topics
-}
-
-# Create Topic Function
 createDefaultRegistrations() {
   echo "Updating topics bucket with registry from $GQL_GW_DIR/dev folder"
-  aws --endpoint-url=http://localhost:4572 s3 cp dev s3://topics/data-api/dev/ --recursive
+  aws --endpoint-url=http://localhost:4572 s3 cp dev s3://topics/graphql-gateway/dev/ --recursive
   echo "Registry setup completed"
 }
 
@@ -50,9 +44,6 @@ while [[ "$1" != "" ]]; do
 
   esac
 done
-
-# Call create Topic
-createTopic
 
 if [ $CREATE_WITH_PROVIDER = true ]; then
   # execute in subshell
