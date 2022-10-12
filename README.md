@@ -30,8 +30,6 @@ To check if the schema has been updated, go to http://localhost:7000/graphiql, y
 
 Click on Query type on the right hand side, then you should see the findUniversityByName field name:
 
-![alt text](./doc/findUniversityByName-field.png)
-
 Then run this query
 
 ```
