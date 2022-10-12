@@ -1,4 +1,4 @@
-# university-api-graphql-adapter
+# University Domains List API REST Adapter
 
 This is an example REST adapter for Graph Quilt's Gateway.  
 
